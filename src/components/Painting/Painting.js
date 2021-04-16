@@ -1,7 +1,21 @@
 
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import './Painting.css';
+
+const styles = {
+  container: {
+    width: 200,
+    border: '2px solid',
+    borderColor: 'red'
+    
+  }
+}
+
+
 const Painting = ({ url, title, profileUrl, tag, price, quantity }) => (
-  <div>
+  <div className='Painting'>
+      {/* <div style={styles.container}> */}
+  {/* <div style={{ width: 200, border: '2px solid', borderColor: 'red' }} >   */}
     <img src={url} alt={title} width="500" />
     <h2>{title}</h2>
     <p>
